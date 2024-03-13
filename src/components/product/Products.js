@@ -12,7 +12,7 @@ export default function Products() {
   return (
     <div className="Product-container">
       {products &&
-        products.map((value) => (
+        products.map((value,index) => (
           <div key={value.id} className="Product-items">
             <div><img className="Product-img" src={value.image} alt={value.name}/></div>
             <h2>{value.name}</h2>
